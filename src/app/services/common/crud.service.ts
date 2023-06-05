@@ -3,7 +3,8 @@ import { HttpClient, HttpParams } from '@angular/common/http';
 import { environment } from '../../../environments/environment';
 import { Observable } from 'rxjs';
 
-const API_NEW_EXPENSE = environment.apiBaseLink + '/api/ed22eb2c20654f7681ffc8ce7a55e998/';
+const API_NEW_EXPENSE =
+  environment.apiBaseLink + '/api/ed22eb2c20654f7681ffc8ce7a55e998/';
 
 @Injectable({
   providedIn: 'root',
@@ -12,7 +13,7 @@ export class CrudService {
   constructor(private httpClient: HttpClient) {}
 
   /**
-   * addCrud 
+   * addCrud
    * getAllCruds
    * getCrudById
    * updateCrudById
@@ -68,6 +69,4 @@ export class CrudService {
   //     { params }
   //   );
   // }
-
-
 }
