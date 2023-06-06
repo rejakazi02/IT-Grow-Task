@@ -75,7 +75,7 @@
   <div class="content">
     <div class="videos">
       <!-- single card start -->
-      <div class="video" *ngFor="let data of moviesData">
+      <div class="video" *ngFor="let data of moviesData" [routerLink]="['']">
         <div class="thumbnail">
           <img [src]="data?.thumbnailUrl" alt="" />
         </div>
