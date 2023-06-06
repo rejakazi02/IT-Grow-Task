@@ -1,6 +1,3 @@
-
-
-
 <main>
   <div class="side-bar">
     <div class="nav">
@@ -54,18 +51,18 @@
     <div class="videos">
       <!-- single card start -->
       <div class="video" *ngFor="let data of moviesData" [routerLink]="['movie',data?.id]">
-        <div class="thumbnail" >
+        <div class="thumbnail">
           <img [src]="data?.thumbnailUrl" alt="" />
         </div>
 
         <div class="details">
           <div class="author">
-            
+
             <img [src]="data?.thumbnailUrl" alt="" />
           </div>
           <div class="title">
             <h3>
-             {{data?.title}}
+              {{data?.title}}
             </h3>
             <a href="">
               {{data?.author}}
